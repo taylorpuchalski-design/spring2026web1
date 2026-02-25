@@ -1,0 +1,34 @@
+body {
+    background-color: #E6E455
+}
+
+#wrapper {
+    background-color: #42A4E6
+}
+
+header, nav, main, footer {
+    padding: 20px;
+    border: 2px solid #ADF540;
+}
+
+
+main h2{
+    background-color: #E65655;
+    padding: 6px;
+    border-bottom: 10px solid #596166;
+    margin: 140px 0px 0px 0px;
+
+}
+
+/* styling a div block element box */
+div.imageContainer {
+    background-color: #fff
+    padding: 20px;
+    border: 11px solid #000;
+}
+
+/* styling a img inline element box */
+div.imageContainer img {
+width: 200px;
+height: 200px;
+}

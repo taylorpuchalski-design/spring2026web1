@@ -1,0 +1,35 @@
+body {background-color: #FCC6BB;font-family:'Times New Roman', Times, serif;}
+
+#wrapper {
+    background-color:#FEEBE7;
+    width: 85%;
+    margin: 50px auto;
+}
+
+h1 {color: #9C2007;text-align: center;}
+h2 {color:#C82909;text-align: center;}
+h3 {color:#F4320B;text-align: center;}
+p {font-family:  "Lucida Console", "Courier New", monospace;}
+
+div.galleryItem {
+    background-color:#FEEBE7;
+    float:left;
+    clear:right;
+    height:300px;
+    border:2px #9C2007;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+div.galleryItem img {
+    width: 100%;
+    height: 200px;
+}
+
+footer {
+    background-color:#FAA18F;
+    float:none;
+    clear:both;
+}

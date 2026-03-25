@@ -1,0 +1,130 @@
+/* BEGIN border-box fix */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* END border-box fix */
+
+
+header,footer {
+    font-family: "UnifrakturMaguntia", cursive;
+}
+
+
+body {
+    background-color: #373470;
+    font-family: "PT Sans", sans-serif;
+
+
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.pt-sans-regular {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-sans-bold {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pt-sans-regular-italic {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pt-sans-bold-italic {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+.unifrakturmaguntia-regular {
+  font-family: "UnifrakturMaguntia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+/* Grouping example */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-transform: uppercase;
+}
+
+/* GRID CONTAINER (PARENT) */
+.wrapper {
+    background: rgb(255, 255, 255);
+    /* grid layout parent */
+    display: grid;
+    /* create 12 col layout */
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* padding on immediate children of wrapper */
+.wrapper>* {
+  padding: 20px;
+
+}
+
+img {
+  display: block;
+  margin: 10 auto;
+  width: 90%;
+}
+
+/* GRID ITEMS (CHILDEREN) */
+header {
+    background-color:#CBC9F0;
+    grid-column: 1 / 13;
+}
+
+nav {
+    background-color: #F0EEC9;
+    grid-column: 1 / 4;
+}
+
+main {
+    background-color: #F0E5C9;
+      grid-column: 4 / 10;
+}
+
+aside {
+    background-color: #F0EEC9;
+      grid-column: 10 / 13;
+}
+
+/* span 2 rows */
+main,
+nav,
+aside {
+  grid-row: 2 / 4;
+}
+
+
+
+footer {
+    background-color: #CBC9F0;
+    grid-column: 1 / 13;
+}

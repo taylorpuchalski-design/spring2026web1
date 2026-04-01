@@ -1,0 +1,138 @@
+
+
+  .bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+  .varela-round-regular {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+    background-color: #008AE6;
+    font-family: "Varela Round", sans-serif;
+    padding: 50px;
+
+}
+
+
+
+#wrapper {
+    background-color:#BBD2E1;
+    width: 85%;
+    margin: 0px auto;
+    text-align: center;
+
+}
+
+h1 {
+    color: #325165;
+    font-family: "Bebas Neue", sans-serif;
+    
+}
+
+h2 {
+     color:#306A91;
+     font-size: 35px;
+     font-family: "Bebas Neue", sans-serif;
+}
+
+
+h3 {
+    color: #7598AF;
+    font-family: "Bebas Neue", sans-serif;
+    margin-top:30px;
+    font-size:18px;
+}
+
+a,p {
+    color:#008AE6;
+    margin: 20px;
+    font-family: 'Varela Round', sans-serif;
+    text-decoration: none;
+
+    
+
+}
+
+.container{
+ margin: 0px auto;
+
+}
+
+
+a:hover {
+    color:#fc03b1;
+
+}
+
+
+.spin{
+  margin: 50px auto;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.wink {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 120px;
+  display: flex;
+  justify-content: center;
+  animation-name: wink; 
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes wink {
+  0%, 100% {
+    opacity: 1;}
+  50% {
+    opacity: 0;}
+}
+
+
+.balloon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: balloon; 
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+
+
+@keyframes balloon {
+  0% {
+    transform: scale(1); 
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+

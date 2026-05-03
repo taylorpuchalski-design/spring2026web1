@@ -1,0 +1,73 @@
+
+body {
+	font-family: helvetica, arial, sans-serif;
+}
+
+h1 {
+	color: black;
+	text-align: center;
+}
+
+#left-container {
+	left: 0px;
+}
+
+#right-container {
+	right: 0px;
+}
+
+.container {
+	background-color: #FFA4DB;
+	width: 15%;
+	top: 0px;
+	position: absolute;
+	height: 100%;
+	padding: 10px;
+}
+
+.career {
+	position: relative;
+	height: 13%;
+	left: -10px;
+}
+
+.option {
+	position: absolute;
+	max-height: 175px;
+	z-index: 2;
+	top: 0;
+	left: 0;
+}
+
+.pot-sides {
+	height: 80%;
+	width: 60%;
+	background: #B3DFFF;
+	border-radius: 1rem;
+	position: absolute;
+	bottom: 0.5%;
+	left: 20%;
+	opacity: 0.5;
+	z-index: 1;
+}
+
+.pot-lid {
+	width: 50%;
+	height: 5%;
+	background: #819FB5;
+	position: absolute;
+	bottom: 80.5%;
+	left: 25%;
+	opacity: 0.7;
+	z-index: 1;
+}
+
+.pot-bottom {
+	width: 50%;
+	height: 1%;
+	background: #819FB5;
+	position: absolute;
+	bottom: 0%;
+	left: 25%;
+	opacity: 0.7;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<title>Final Project Proposal - Taylor Puchalski</title>
+<link rel="stylesheet" href="styles.css" />
+
+<style> 
+#flip {
+  padding: 50px;
+  text-align: center;
+  background-color: #525252;
+  border: solid 1px #c3c3c3;  
+}
+
+
+
+h2 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 100px; /* Adjust as needed */
+  font-weight: bold;
+}
+
+#panel {
+  padding: 100px;
+  text-align: center;
+  background-color: #525252;
+  border: solid 1px #c3c3c3;
+  display:none;
+}
+</style>
+</head>
+<body>
+ 
+
+<div id="flip"><h1>My final project will be on...</h1> (click me!)</div>
+  <div id="panel"> <h2>Don Toliver</h2>
+    <div class="stack">
+     <div class="hidden">
+    <p>I want my website to be based on the music artist Don Toliver and the visuals for his most recent album, Octane. I will look for fonts and images that match the gothic and cyberpunk visual themes of the era and present them with mainly dark colors. 
+<br/><br/>
+I plan to explore the visual feel of Don Toliver's music, either through the tracklist of Octane or an overview of his albums.
+<br/><br/>
+</p>
+</div>
+     <div class="image-container">
+  <img src="images/octane.jpg"></div>
+
+</div>
+
+       <div class="unhidden">
+<p>I was inspired by previous homework assignments to use a cursor animation, and I intend to create one in Javascript.
+<br/><br/>
+I'm interested in using p5.js to create a non-interactive smoke/laser effect that matches the aesthetic of the page without covering up any content (probably along page borders).
+<br/><br/>
+I really enjoyed using the Slide Toggle effect for this assignment, so I want to use that for my Jquery interaction.
+</p>
+</div>
+
+
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script> 
+    $(document).ready(function(){
+      $("#flip").click(function(){
+        $("#panel").slideToggle("fast"); // try "slow" 
+         $(".image-container img").fadeTo("slow", 1.0);
+      });
+      $(".image-container").click(function(){
+    $(this).fadeTo("slow", 0.01);
+    });
+    });
+    </script>
+
+</body>
+</html>

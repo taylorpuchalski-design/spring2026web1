@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Octane Tour - Final Project</title>
+<link rel="stylesheet" href="styles.css" />
+
+  
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Diplomata&display=swap" rel="stylesheet">
+
+<canvas><div id="dots-canvas"></div></canvas>
+
+
+</head>
+<body>
+   
+  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js"></script>   
+   
+   <script src="sketch.js"></script> 
+
+<style> 
+   /* Added an inline style here to give this page a specific color scheme */
+    body {background-color: #142b1b;}
+  </style>
+  
+ <div class="cursor"></div>
+    <div class="nav" style="background-color: #285534;"> 
+      <!-- /*Added an inline style here to give this page a specific color scheme*/ -->
+     <div class="item"><a href="index.html"><p>Home</p></a></div>
+     <div class="item"><a href="albums.html"><p>Albums</p></a></div>
+     <div class="item"><a href="octane.html"><p>Octane Tour</p></a></div>
+   </div>
+
+   
+
+<div id="flip"><h1>Octane Tour</h1> <p>click title to expand!</p></div>
+ 
+
+    <div id="panel">
+    <h2>Forest Design</h2>
+   <div class="row1">
+    
+     <div class="text">
+       <p>Don Toliver's  Octane Tour stage design leans into a moody, cinematic aesthetic that feels like isolation on an endless nighttime drive. The set is partially engulfed in dense artificial trees, turning the stage into something resembling a roadside clearing in the middle of nowhere. That natural element contrasts with the tour's usual dark, gritty, neon-lit energy, making the environment feel more organic and unsettling at the same time. The familiar motion paired with disorientation reinforces the sensation of headlights cutting through fog on an empty highway. Rather than softening his established aesthetic, the trees deepen it, adding texture and a quiet, eerie stillness that sits underneath the heavy bass and industrial visuals.</p>
+     </div>
+      <img src="images/trees.webp">
+     
+   </div>
+
+
+   <h2>Floating Stage</h2>
+   <div class="row2">
+       <img src="images/floatingstage.png">
+     
+      <div class="text">
+       <p>The Tour's floating stage concept pushes Don Toliver's live show into a more surreal direction by making it feel like he is suspended above the crowd instead of anchored to a fixed platform. The elevated structure creates a drifting and weightless visual that fits the tour's hazy nighttime aesthetic, as if the stage itself is moving through the same dark highway world suggested by the production design. With shifting lights and atmospheric haze, the effect becomes slightly disorienting while still feeling controlled, and he appears to glide through space while maintaining the gritty energy of the performance. The idea is not just spectacle but reinforcement of the album's themes of motion, isolation, and blurred reality.</p>
+     </div>
+   </div>
+     
+  
+     <script>
+      $(document).ready(function(){
+        $("#flip").click(function(){
+         $("#panel").slideToggle("fast");
+        });
+      });
+  </script>
+
+
+    </div>
+</body>
+</html>
